@@ -19,7 +19,7 @@
         } else {
             NSString* iTunesLink;
             if([[[UIDevice currentDevice] systemVersion] floatValue] >= 11) {
-                iTunesLink = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/xy/app/foo/id%@?action=write-review", appId];
+                iTunesLink = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/xy/app/foo/id", appId];
             } else {
                 iTunesLink = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@&action=write-review", appId];
             }
